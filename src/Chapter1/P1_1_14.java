@@ -13,9 +13,32 @@ public class P1_1_14 {
 //		for (int N = 0; N<100; N++) System.out.println(N+" "+F(N)); // the result is the pre-num+current bum
 //		long[] a = new long[100]; A(a); //1.1.19 solution
 //		System.out.println(in(factorial(5))); // 1.1.20 solution
-		test1(); // 1.1.22 solution
+//		test1(); // 1.1.22 solution
+//		System.out.println(divisor(1111111,1234567)); // 1.1.24 solution
 		
 		
+	}
+	
+	private static int divisor(int a, int b){
+		if(a>b){
+			if(a%b == 0){
+				return b;
+			}else{
+				int c = a%b;
+				System.out.println(a+" "+b+" "+c);
+				return divisor(b,c);
+			}
+		}else if(a<b){
+			if(b%a == 0){
+				return a;
+			}else{
+				int c = b%a;
+				System.out.println(a+" "+b+" "+c);
+				return divisor(a,c);
+			}	
+		}else{
+			return a;
+		}
 	}
 	
 	private static void test1() {
