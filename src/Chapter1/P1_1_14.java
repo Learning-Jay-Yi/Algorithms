@@ -14,9 +14,9 @@ public class P1_1_14 {
 //		long[] a = new long[100]; A(a); //1.1.19 solution
 //		System.out.println(in(factorial(5))); // 1.1.20 solution
 //		test1(); // 1.1.22 solution
-//		System.out.println(divisor(1111111,1234567)); // 1.1.24 solution
+//		System.out.println(divisor(2,3)); // 1.1.24 solution
 		
-		
+		System.out.println(2^3);
 	}
 	
 	private static int divisor(int a, int b){
